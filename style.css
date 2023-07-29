@@ -1,0 +1,106 @@
+/* Reset de estilos para garantir consistência em diferentes navegadores */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* Aplica a imagem de fundo a toda a página e centraliza */
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2b2e33; /* Cor de fundo - azul escuro */
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #24292e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  nav a:hover {
+    color: #70b7ff;
+  }
+  
+  section {
+    padding: 40px 0;
+    color: #fff; /* Cor do texto - branco */
+  }
+  
+  section h2 {
+    font-size: 30px; /* Tamanho maior para os títulos das seções */
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    font-size: 18px; /* Tamanho maior para o texto */
+    line-height: 1.8;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #24292e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  /* Estilo para a foto do perfil - alinhar à esquerda */
+  .profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    float: left;
+    margin-right: 20px;
+  }
+  
+  /* Estilo para os links */
+  a {
+    color: #70b7ff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
