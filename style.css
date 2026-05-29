@@ -1,106 +1,155 @@
-/* Reset de estilos para garantir consistência em diferentes navegadores */
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul, li, a {
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    text-decoration: none;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    /* Aplica a imagem de fundo a toda a página e centraliza */
-    background-image: url();
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #2b2e33; /* Cor de fundo - azul escuro */
-  }
-  
-  .container {
-    max-width: 960px;
+    color: #2c3e50;
+    background-color: #f5f7fa;
+}
+
+.container {
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  header {
-    background-color: #24292e;
-    color: #fff;
-    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 20px;
     text-align: center;
-  }
-  
-  header h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    margin-right: 15px;
-  }
-  
-  nav a:hover {
-    color: #70b7ff;
-  }
-  
-  section {
-    padding: 40px 0;
-    color: #fff; /* Cor do texto - branco */
-  }
-  
-  section h2 {
-    font-size: 30px; /* Tamanho maior para os títulos das seções */
-    margin-bottom: 20px;
-  }
-  
-  section p {
-    font-size: 18px; /* Tamanho maior para o texto */
-    line-height: 1.8;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  ul li {
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 48px;
     margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: #24292e;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  footer p {
-    font-size: 14px;
-  }
-  
-  /* Estilo para a foto do perfil - alinhar à esquerda */
-  .profile-picture {
-    width: 300px;
-    height: 300px;
+    font-weight: 600;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 25px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+section {
+    background: white;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    color: #667eea;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-left: 4px solid #764ba2;
+    padding-left: 15px;
+}
+
+section p {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.8;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+}
+
+ul li::before {
+    content: "▹";
+    color: #764ba2;
+    position: absolute;
+    left: 0;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    float: left;
-    margin-right: 20px;
-  }
-  
-  /* Estilo para os links */
-  a {
-    color: #70b7ff;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
+    border: 4px solid white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto 20px auto;
+    object-fit: cover;
+}
+
+footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+a {
+    color: #764ba2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #667eea;
+    text-decoration: none;
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    section h2 {
+        font-size: 24px;
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+}
   
