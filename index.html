@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,21 +7,15 @@
   <title>Marcelo Desenvolvedor | Portfólio</title>
   <link rel="stylesheet" href="style.css">
   <script>
-    // Isso resolve o problema dos links não rolarem
     document.addEventListener('DOMContentLoaded', function() {
       const links = document.querySelectorAll('nav a');
-      
       links.forEach(link => {
         link.addEventListener('click', function(e) {
           e.preventDefault();
           const targetId = this.getAttribute('href').substring(1);
           const targetSection = document.getElementById(targetId);
-          
           if (targetSection) {
-            targetSection.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
+            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
         });
       });
@@ -45,7 +40,7 @@
     <div class="container">
       <h2>Sobre Mim</h2>
       <p>
-       Marcelo do Nascimento de Jesus. Nascido em 13/06/1982 em São Paulo - SP (Pirituba). Formado em Análise e Desenvolvimento de Sistemas pela UNINOVE e Técnico em Informática pelo Senac. Habilidades em Python, JavaScript, infraestrutura de TI e GitHub. Em transição de carreira, buscando oportunidade na área de tecnologia.
+        Marcelo do Nascimento de Jesus. Nascido em 13/06/1982 em São Paulo - SP (Pirituba). Formado em Análise e Desenvolvimento de Sistemas pela UNINOVE e Técnico em Informática pelo Senac. Habilidades em Python, JavaScript, infraestrutura de TI e GitHub. Em transição de carreira, buscando oportunidade na área de tecnologia.
       </p>
     </div>
   </section>
@@ -87,17 +82,16 @@
   <section id="contato">
     <div class="container">
       <h2>Contato</h2>
-      <p>Email: marcelo.131@hotmail.com</p>
-      <p>GitHub: <a href="https://github.com/manara1982" target="_blank">manara1982-github</a></p>
-      <p>Linkedin: <a href="https://www.linkedin.com/in/marcelo-do-nascimento-de-jesus-347651239/" target="_blank">marcelo-do-nascimento-de-jesus-347651239-linkedin</a></p>
+      <p>📧 Email: <a href="mailto:marcelo.131@hotmail.com">marcelo.131@hotmail.com</a></p>
+      <p>🐙 GitHub: <a href="https://github.com/manara1982" target="_blank">github.com/manara1982</a></p>
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/marcelo-do-nascimento-de-jesus-347651239/" target="_blank">linkedin.com/in/marcelo-do-nascimento-de-jesus</a></p>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>© 2023 Marcelo Desenvolvedor</p>
+      <p>© 2025 Marcelo Desenvolvedor</p>
     </div>
   </footer>
 </body>
 </html>
-  
